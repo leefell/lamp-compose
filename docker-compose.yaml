@@ -40,7 +40,7 @@ services:
       PGADMIN_DEFAULT_EMAIL: postgres@servidor.com
       PGADMIN_DEFAULT_PASSWORD: postdba
     ports:
-      - 8081:80
+      - 81:80 # 8081:80 -> tem que liberar na instância, caso for 81:80 não precisa pois já está liberada.
     depends_on:
       - postgres
     networks:
